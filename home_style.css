@@ -1,0 +1,205 @@
+@import url(//db.onlinewebfonts.com/c/22e42657ab2a40f56d74cf2ee6cdd588?family=OCRATributeW01-Regular);
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: "OCRATributeW01-Regular";
+}
+
+h1, h2, h3 {
+  color: #000000C0;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+body > div.bg {
+  position: absolute;
+  background: url("res/bg~1.png") no-repeat center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
+}
+
+body > div.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 1.5rem 1rem;
+  background: linear-gradient(-23deg, #1332, #ffffff40);
+}
+
+body > div.container > header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body > div.container > header > aside {
+  padding: 0;
+}
+
+body > div.container > header > aside img {
+  width: 80px;
+}
+
+body > div.container > header > section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body > div.container > main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFFDD;
+}
+
+body > div.container > main > div.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body > div.container > main > div.container > div.col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 12px;
+}
+
+body > div.container > main > div.container > div.col > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("res/svg/xc_Group 89.svg") no-repeat center;
+  margin: 5px 0;
+  width: 190px;
+}
+
+body > div.container > main > div.container > div.col > div > span {
+  padding-top: 4px;
+}
+
+body > div.container > main > div.container > div.col > div > span:first-child {
+  padding-left: 23px;
+}
+
+body > div.container > main > div.container > div.col > div > .im_con {
+  padding: 2px 5px 2px 34px;
+  width: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body > div.container > main > div.container > div.col > div > .im_con img {
+  height: 25px;
+}
+
+body > div.container > main > div.container > div.col:first-child > div:nth-child(-n+5) > span:first-child {
+  padding-left: 25px;
+}
+
+body > div.container > main > div.container > div.col:first-child > div:nth-child(-n+5) .im_con {
+  padding-left: 40px;
+}
+
+body > div.container > footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 35px;
+}
+
+body > div.container > footer h2 {
+  text-align: center;
+}
+
+body > div.container > footer img {
+  width: 40px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body > div.container > footer > img {
+  margin-bottom: 0.5rem;
+}
+
+body > div.container > footer > section {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body > div.container > footer > section h2 {
+  font-size: 15px;
+}
+
+body > div.container > footer > section img {
+  margin: 0 1rem;
+}
+/*# sourceMappingURL=home_style.css.map */
