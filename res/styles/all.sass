@@ -1,0 +1,102 @@
+@font-face 
+  font-family: myfont
+  src: url("../ocra.woff") format('woff')
+
+* 
+  padding: 0
+  margin: 0
+  border: 0
+  font-family: myfont, Calibri, serif
+h1, h2, h3
+  color: #000000C0
+
+body
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  position: relative
+
+  > div.bg
+    position: fixed
+    background: url("../bg~1.png") no-repeat center
+    background-size: cover
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: -10
+    filter: blur(2px)
+
+  > div.container
+    display: flex
+    flex-direction: column
+    align-items: stretch
+    flex-grow: 1
+    padding: 1.5rem 1rem
+    background: linear-gradient(-23deg, #1332, #ffffff40)
+
+    > header
+      display: flex
+      align-items: center
+      > aside
+        padding: 0
+        img
+          width: 80px
+        select
+          vertical-align: middle
+          background-color: #00000000
+          color: #000000C0
+          font-size: 1.4rem
+          font-weight: bold
+          margin: 0 3px 0 7px
+          option
+            padding: 1px
+      > section
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+
+    > nav
+      display: flex
+      margin: 1rem 0 2rem
+      border-radius: 5px
+      ul
+        list-style: none
+        display: flex
+        li
+          padding: 5px 15px
+          &.active
+            font-weight: 900
+          a
+            text-decoration: none
+            color: unset
+
+    > main
+      flex-grow: 1
+      display: flex
+      align-items: center
+      color: #FFFFFFDD
+      > div.container
+        display: flex
+
+    > footer
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding: 35px 35px 15px
+      h2
+        text-align: center
+      img
+        width: 40px
+        align-self: center
+      > img
+        margin-bottom: 0.5rem
+      > section
+        flex-grow: 1
+        display: flex
+        align-items: center
+        h2
+          font-size: 15px
+        img
+          margin: 0 1rem
