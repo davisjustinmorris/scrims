@@ -1,0 +1,251 @@
+@font-face {
+  font-family: myfont;
+  src: url("../ocra.woff") format("woff");
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: myfont, Calibri, serif;
+}
+
+h1, h2, h3 {
+  color: #000000C0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+  max-width: 100vw;
+}
+body > div.bg {
+  position: fixed;
+  background: url("../bg~1.png") no-repeat center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
+  filter: blur(2px);
+}
+body > div.container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-grow: 1;
+  padding: 1.5rem 1rem;
+  background: linear-gradient(-23deg, #1332, #ffffff40);
+}
+body > div.container > header {
+  display: flex;
+  align-items: center;
+}
+body > div.container > header > aside {
+  padding: 0;
+}
+body > div.container > header > aside img {
+  width: 80px;
+}
+body > div.container > header > aside select {
+  vertical-align: middle;
+  background-color: #00000000;
+  color: #000000C0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0 3px 0 7px;
+}
+body > div.container > header > aside select option {
+  padding: 1px;
+}
+body > div.container > header > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body > div.container > nav {
+  display: flex;
+  margin: 1rem 0 2rem;
+  border-radius: 5px;
+}
+body > div.container > nav ul {
+  list-style: none;
+  display: flex;
+}
+body > div.container > nav ul li {
+  padding: 5px 15px;
+  cursor: pointer;
+}
+body > div.container > nav ul li.active {
+  font-weight: 900;
+}
+body > div.container > nav ul li a {
+  text-decoration: none;
+  color: unset;
+}
+body > div.container > main {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFFDD;
+}
+body > div.container > main > div.container {
+  display: none;
+}
+body > div.container > main > div.container.active {
+  display: flex;
+}
+body > div.container > main > div.container.slots {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body > div.container > main > div.container.slots > div.col {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+body > div.container > main > div.container.slots > div.col > div {
+  display: flex;
+  align-items: center;
+  background: url("../svg/xc_Group 89.svg") no-repeat center;
+  margin: 5px 0;
+  width: 190px;
+}
+body > div.container > main > div.container.slots > div.col > div > span {
+  padding-top: 4px;
+}
+body > div.container > main > div.container.slots > div.col > div > span:first-child {
+  padding-left: 23px;
+}
+body > div.container > main > div.container.slots > div.col > div > .im_con {
+  padding: 2px 5px 2px 34px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+}
+body > div.container > main > div.container.slots > div.col > div > .im_con img {
+  height: 25px;
+}
+body > div.container > main > div.container.slots > div.col:first-child > div:nth-child(-n+5) > span:first-child {
+  padding-left: 25px;
+}
+body > div.container > main > div.container.slots > div.col:first-child > div:nth-child(-n+5) .im_con {
+  padding-left: 40px;
+}
+body > div.container > main > div.container.scores {
+  max-width: calc(100vw - 2rem);
+}
+body > div.container > main > div.container.scores > .col span {
+  background-color: #1118;
+}
+body > div.container > main > div.container.scores > .col.rank span {
+  text-align: end;
+  padding-left: 15px;
+}
+body > div.container > main > div.container.scores > .col.teams span {
+  padding-right: 15px;
+}
+body > div.container > main > div.container.scores .scroll {
+  display: flex;
+  overflow-x: scroll;
+  box-shadow: 0 0 20px 1px #1114;
+}
+body > div.container > main > div.container.scores .scroll .col span {
+  background-color: #1117;
+  text-align: center;
+  padding: 3px 12px;
+}
+body > div.container > main > div.container.scores .scroll .col:first-child span {
+  padding-left: 17px;
+}
+body > div.container > main > div.container.scores .scroll .col:last-child span {
+  padding-right: 17px;
+}
+body > div.container > main > div.container.scores .col {
+  display: flex;
+  flex-direction: column;
+}
+body > div.container > main > div.container.scores .col.day.d6 span {
+  box-shadow: 0 -10px 10px -15px #000000 inset, -10px 0px 10px -15px #1119 inset;
+}
+body > div.container > main > div.container.scores .col.day.d6 span:nth-child(2) {
+  box-shadow: 0 -10px 10px -15px #000000 inset, -10px 0px 10px -15px #1119 inset, 0px 10px 12px -15px #FFFFFF inset;
+}
+body > div.container > main > div.container.scores .col span {
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 3px;
+  box-shadow: 0 -10px 10px -15px #000000 inset;
+  color: #fffE;
+}
+body > div.container > main > div.container.scores .col span:first-child {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-weight: 600;
+  text-align: center;
+  background-color: #FFF;
+  color: #111D;
+}
+body > div.container > main > div.container.scores .col span:nth-child(2) {
+  padding-top: 7px;
+  box-shadow: 0 -10px 10px -15px #000000 inset, 0px 10px 12px -15px #FFFFFF inset;
+}
+body > div.container > main > div.container.scores .col span:last-child {
+  padding-bottom: 5px;
+}
+body > div.container > main > div.container.maps {
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2rem;
+}
+body > div.container > main > div.container.maps .map_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+body > div.container > main > div.container.maps .map_block span {
+  margin-top: 10px;
+  color: #000000D0;
+  font-size: 20px;
+  font-weight: 700;
+}
+body > div.container > main > div.container.rules {
+  padding: 0 1rem;
+  flex-direction: column;
+  color: #000000D0;
+  font-size: 20px;
+  font-weight: 500;
+}
+body > div.container > footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 35px 15px;
+}
+body > div.container > footer h2 {
+  text-align: center;
+}
+body > div.container > footer img {
+  width: 40px;
+  align-self: center;
+}
+body > div.container > footer > img {
+  margin-bottom: 0.5rem;
+}
+body > div.container > footer > section {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+body > div.container > footer > section h2 {
+  font-size: 15px;
+}
+body > div.container > footer > section img {
+  margin: 0 1rem;
+}
+
+/*# sourceMappingURL=index.css.map */
