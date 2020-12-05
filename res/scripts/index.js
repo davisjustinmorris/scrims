@@ -98,7 +98,7 @@ function filler(week, target) {
             $(`main .slots .col:nth-child(${col_tg})`).append(
            `<div>
                 <span>${val[0]}</span>
-                <div class="im_con"><img src="${val[2]}" alt=""></div>
+                <div class="im_con"><img src="${DOMAIN}/static/res/teams/${val[2]}" alt=""></div>
                 <span>${val[1]}</span>
             </div>`
             );

@@ -22,7 +22,7 @@ body {
 }
 body > div.bg {
   position: fixed;
-  background: url("../bg~1.png") no-repeat center;
+  background: url("../bg.png") no-repeat center;
   background-size: cover;
   top: 0;
   left: 0;
@@ -110,7 +110,7 @@ body > div.container > main > div.container.slots > div.col {
 body > div.container > main > div.container.slots > div.col > div {
   display: flex;
   align-items: center;
-  background: url("../svg/xc_Group 89.svg") no-repeat center;
+  background: url("../svg/xl_Group_89.svg") no-repeat center;
   margin: 5px 0;
   width: 190px;
 }
